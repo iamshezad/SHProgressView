@@ -47,6 +47,19 @@ progressTV.textInactiveColor = UIColor.gray
 ```swift 
 progressTV.items = ["Set list of items here"] //An array of string
 ```
+
+- Animating progress view : 
+
+-- For animating to next Cell
+```swift 
+ progressTV.next()
+```
+
+-- For animating to previous Cell
+```swift 
+ progressTV.previous()
+```
+
 #### Note: Set data to progress view after customising
 
 ## Requirements
