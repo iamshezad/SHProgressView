@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SHCell" rowHeight="87" id="KGk-i7-Jjw" customClass="SHCell" customModule="SHProgressView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUy-im-Vvu" customClass="ProgressView" customModule="SHProgressView" customModuleProvider="target">
+                        <rect key="frame" x="22" y="33.5" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eW5-no-mqw"/>
+                            <constraint firstAttribute="width" constant="20" id="i3S-cI-OXU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-Jb-k5c" customClass="ProgressView" customModule="SHProgressView" customModuleProvider="target">
+                        <rect key="frame" x="31.5" y="0.0" width="1" height="33.5"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.023529411760000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="9nz-EF-Vej"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHP-0x-TF9" customClass="ProgressView" customModule="SHProgressView" customModuleProvider="target">
+                        <rect key="frame" x="31.5" y="53.5" width="1" height="33"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.023529411760000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="Alg-OF-Azl"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-QJ-3S9">
+                        <rect key="frame" x="57" y="15" width="328" height="56.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="YWw-1r-ebj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kUy-im-Vvu" firstAttribute="top" secondItem="7CQ-Jb-k5c" secondAttribute="bottom" id="183-kf-RTr"/>
+                    <constraint firstItem="kUy-im-Vvu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6ZJ-He-JZk"/>
+                    <constraint firstItem="kUy-im-Vvu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="8fW-1K-lHR"/>
+                    <constraint firstItem="7CQ-Jb-k5c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cas-Oc-CW5"/>
+                    <constraint firstItem="D4T-QJ-3S9" firstAttribute="leading" secondItem="kUy-im-Vvu" secondAttribute="trailing" constant="15" id="KXk-2Y-Icv"/>
+                    <constraint firstAttribute="trailing" secondItem="D4T-QJ-3S9" secondAttribute="trailing" constant="15" id="Kg3-58-XOr"/>
+                    <constraint firstAttribute="bottom" secondItem="D4T-QJ-3S9" secondAttribute="bottom" constant="15" id="LP9-Kd-dWU"/>
+                    <constraint firstItem="D4T-QJ-3S9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="LsO-JJ-Zew"/>
+                    <constraint firstItem="7CQ-Jb-k5c" firstAttribute="centerX" secondItem="kUy-im-Vvu" secondAttribute="centerX" id="knL-cO-M7c"/>
+                    <constraint firstAttribute="bottom" secondItem="GHP-0x-TF9" secondAttribute="bottom" id="qp7-TE-fEp"/>
+                    <constraint firstItem="GHP-0x-TF9" firstAttribute="top" secondItem="kUy-im-Vvu" secondAttribute="bottom" id="tHc-ND-pIP"/>
+                    <constraint firstItem="GHP-0x-TF9" firstAttribute="centerX" secondItem="kUy-im-Vvu" secondAttribute="centerX" id="w42-WT-HaJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomView" destination="GHP-0x-TF9" id="EeO-1D-CcK"/>
+                <outlet property="circleView" destination="kUy-im-Vvu" id="EEe-oN-zcY"/>
+                <outlet property="contentLabel" destination="D4T-QJ-3S9" id="zd4-IZ-exo"/>
+                <outlet property="topView" destination="7CQ-Jb-k5c" id="tW0-RI-8EG"/>
+            </connections>
+            <point key="canvasLocation" x="196.80000000000001" y="174.06296851574214"/>
+        </tableViewCell>
+    </objects>
+</document>
